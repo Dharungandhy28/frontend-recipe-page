@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: hsla(15, 4%, 18%, 0.7);
+  background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+  max-width: 46rem;
+  margin: 6.6rem auto;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 1.4rem;
+}
+.heading {
+  font-family: "Young Serif", serif;
+}
+
+.main-info img {
+  width: 100%;
+  margin: 0 auto 1.4rem auto;
+  border-radius: 0.6em;
+}
+
+.mobile {
+  display: none;
+}
+
+.main-title {
+  font-size: 2.4em;
+  font-weight: normal;
+  color: hsl(24, 5%, 18%);
+}
+
+@media screen and (max-width: 640px) {
+  .main-info img {
+    display: none;
+  }
+  .mobile img {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.4em;
+  }
+  .formobile {
+    padding: 0.16em;
+  }
+  .container {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+  .main-title {
+    font-size: 2em;
+  }
+}
+
+.description {
+  font-size: 16px;
+  margin: 0.7em 0 2em 0;
+}
+
+.preparation {
+  margin-bottom: 2em;
+  padding: 1em 2em;
+  background-color: hsl(330, 100%, 98%);
+}
+
+li {
+  margin: 0 0 0.7em -1.26em;
+  padding-left: 1.6em;
+  list-style-position: outside;
+}
+
+.preparation h4 {
+  margin-bottom: 0.6em;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+}
+
+.time li {
+  margin-left: -1.6em;
+  padding-left: -0.4em;
+}
+
+.time span {
+  font-weight: bold;
+}
+.time li::marker {
+  font-size: 0.8em;
+  color: hsl(332, 51%, 32%);
+}
+
+.sub-title {
+  font-size: 1.8em;
+  font-weight: normal;
+  margin-bottom: 0.8em;
+  color: hsl(14, 45%, 36%);
+}
+
+.ingr li::marker {
+  font-size: 0.8em;
+  color: hsl(14, 45%, 36%);
+}
+
+.ingr li {
+}
+
+.instruct li::marker {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+.instruct span {
+  font-weight: bold;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin: 2em auto;
+  border: none;
+  background-color: hsl(30, 18%, 87%);
+}
+
+.nutrition {
+  margin-bottom: 0.8em;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 0.6em 0;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.cal {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+.attribution {
+  color: burlywood;
+  padding: 1em;
+  text-align: center;
+  background-color: hsl(14, 45%, 36%);
+}
+
+.frontendmentor,
+.myself {
+  color: burlywood;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.frontendmentor:hover {
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.myself:hover {
+  padding: 0.6em 0.8em;
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+  background-color: #fff;
+  border-radius: 0.4em;
+  border: 1px solid #fff;
+}
